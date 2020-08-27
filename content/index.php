@@ -178,7 +178,6 @@ $controlBuilderSettings = new \bdk\Form\ControlBuilder(array(
                     'value' => $this->request->getCookieParam('jiraHost'),
                     'type' => 'url',
                     'required' => true,
-                    // 'helpBlock' => '<a target="_blank" href="https://community.atlassian.com/t5/Jira-questions/how-to-find-accountid/qaq-p/1111436#:~:text=From%20within%20Jira%2C%20you%20can,own%20user%20avatar%20%2D%3E%20Profile.&text=As%20for%20how%20to%20find,to%20find%20other%20users%20accountId.">How to find AccountId</a>',
                 ));
 
                 echo $controlBuilderSettings->build(array(
@@ -186,7 +185,9 @@ $controlBuilderSettings = new \bdk\Form\ControlBuilder(array(
                     'label' => 'Jira Username',
                     'value' => $this->request->getCookieParam('username'),
                     'required' => true,
+                    'type' => 'email',
                     // 'helpBlock' => '<a target="_blank" href="https://community.atlassian.com/t5/Jira-questions/how-to-find-accountid/qaq-p/1111436#:~:text=From%20within%20Jira%2C%20you%20can,own%20user%20avatar%20%2D%3E%20Profile.&text=As%20for%20how%20to%20find,to%20find%20other%20users%20accountId.">How to find AccountId</a>',
+                    'helpBlock' => 'email address',
                 ));
 
                 /*
@@ -199,13 +200,13 @@ $controlBuilderSettings = new \bdk\Form\ControlBuilder(array(
                 ));
                 */
 
-                // K3BPFgzqyGwJCHCE1jxY4797
                 echo $controlBuilderSettings->build(array(
                     'name' => 'apiToken',
                     'type' => 'password',
                     'label' => 'Api Token',
                     'value' => $this->request->getCookieParam('apiToken'),
                     'required' => true,
+                    'helpBlock' => '<a target="_blank" href="https://confluence.atlassian.com/cloud/api-tokens-938839638.html">Where to find API Token</a>',
                 ));
 
                 echo $controlBuilderSettings->build(array(
