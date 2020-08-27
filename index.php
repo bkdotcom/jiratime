@@ -15,6 +15,7 @@ $tinyFrame = new \bdk\TinyFrame(array(
     ),
     'debug' => function ($c) {
         return new \bdk\Debug(array(
+            /*
             'collect' => true,
             'output' => true,
             'onBootstrap' => function (\bdk\PubSub\Event $event) use ($c) {
@@ -27,23 +28,8 @@ $tinyFrame = new \bdk\TinyFrame(array(
                         // $debug->addPlugin($outputWamp);
                     }
                 }
-                /*
-                $debug->eventManager->subscribe('page.redirect', function ($event) use ($debug) {
-                    $haveWampDebug = false;
-                    foreach ($debug->eventManager->getSubscribers('debug.log') as $subscriber) {
-                        if (is_array($subscriber) && array(get_class($subscriber[0]), $subscriber[1]) == array('bdk\\Debug\\OutputWamp', 'onLog')) {
-                            $haveWampDebug = true;
-                            break;
-                        }
-                    }
-                    $debug->info('output', $debug->getCfg('output'));
-                    $debug->info('haveWampDebug', $haveWampDebug);
-                    if ($debug->getCfg('output') && !$haveWampDebug) {
-                        $event->stopPropagation();  // don't actually redirect, so can see debug output
-                    }
-                });
-                */
             }
+            */
         ));
     },
     'routes' => array(
