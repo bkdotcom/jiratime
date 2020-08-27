@@ -1,0 +1,18 @@
+{
+    "minimum-stability": "dev",
+    "prefer-stable": false,
+    "require": {
+        "bdk/tinyframe": "dev-master",
+        "bdk/wamp-publisher": "dev-master",
+        "lesstif/php-jira-rest-client": "^1.45"
+    },
+    "require-dev": {
+    },
+    "comment": {
+    },
+    "autoload": {
+        "psr-4": {
+            "" : "lib/"
+        }
+    }
+}

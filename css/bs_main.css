@@ -1,0 +1,75 @@
+body {
+	padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+td {
+	text-align:left;
+}
+@media (max-width: 979px) {
+	/* Remove any padding from the body */
+	/*
+	body {
+		padding-top: 0;
+	}
+	*/
+}
+
+header.navbar .logo {
+	/*
+	display: block;
+	float: left;
+	margin: -11px 15px -10px 0;
+	width: 32px;
+	height: 40px;
+	background: transparent url(/images/bradkent.com/logo_navbar.png) no-repeat;
+	background-position: 0 -40px;
+	*/
+}
+header.navbar .navbar-brand:hover .logo {
+	background-position: 0 -80px;
+}
+
+/**
+ * Layout
+ */
+
+@media (max-width: 1200px) {
+	.container {
+		width:100%;
+	}
+}
+
+.container-fixed .content-wrap {
+	float: left;
+	width: 100%;
+	margin-right: -300px;
+}
+.container-fixed .content {
+	margin-right: 300px;
+}
+.container-fixed .side {
+	float: right;
+	width: 300px;
+	/*
+	margin-left: 15px;
+	margin-right: 15px;
+	*/
+}
+
+
+	.side {
+		font-size: 13px;
+		line-height: normal;
+		overflow: auto;
+	}
+	.side a {
+		color: #333;
+	}
+	.sideTop {
+		text-align: center;
+	}
+	.side h4 {
+		font-weight:bold;
+		margin-bottom: 0;
+		border-bottom: 1px solid #000;
+		width: 90%;
+	}
