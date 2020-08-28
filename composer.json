@@ -4,7 +4,7 @@
     "require": {
         "bdk/tinyframe": "dev-master",
         "bdk/wamp-publisher": "dev-master",
-        "lesstif/php-jira-rest-client": "1.42"
+        "lesstif/php-jira-rest-client": "^1.45"
     },
     "require-dev": {
     },
